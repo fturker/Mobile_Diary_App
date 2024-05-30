@@ -15,10 +15,9 @@ class AccountPage extends StatelessWidget {
   Widget build(BuildContext context) {
     if(user != null){
       return const Center(
-        child: Text("AccountPage"),
+        child: Text("Hesap Bilgileri"),
       );
     }
-
     else{
       return SignInWidget();
     }

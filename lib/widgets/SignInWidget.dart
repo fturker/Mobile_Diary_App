@@ -85,8 +85,6 @@ class SignInWidget extends StatelessWidget {
                     await _auth.createUserWithEmailAndPassword(
                         email: _email.text,
                         password: _password.text);
-                    AccountPage aPage = AccountPage();
-                    aPage.login = true;
                     Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) => AccountPage()));
 
