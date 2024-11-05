@@ -11,7 +11,7 @@ class MyAddButton extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     return GestureDetector(
       onTap: () {
-        ref.read(Providers.inputDiary.notifier).update((state) => true);
+        ref.read(inputDiary.notifier).update((state) => true);
       },
       child: Container(
         height: 50.w,
@@ -21,9 +21,11 @@ class MyAddButton extends ConsumerWidget {
           color: Color(0xFF3565A9),
         ),
         child: const ImageIcon(
-            AssetImage("assets/Icons/add-icon.png",), color: Colors.white),
+            AssetImage(
+              "assets/Icons/add-icon.png",
+            ),
+            color: Colors.white),
       ),
     );
   }
 }
-
