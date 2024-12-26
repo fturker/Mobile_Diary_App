@@ -2,7 +2,6 @@ import 'dart:io';
 import '../constants/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gunluk/constants/UIDesign.dart';
 import 'package:gunluk/pages/my_first_page.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -15,7 +14,6 @@ class ImagesPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     return Scaffold(
-      backgroundColor: UIDesign.getBackGroundColor("darkTheme"),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,

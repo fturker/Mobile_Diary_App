@@ -28,9 +28,19 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
-          return const MaterialApp(
+          return MaterialApp(
+            theme: ThemeData(
+              scaffoldBackgroundColor: const Color(0xFF292929),
+              bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+                backgroundColor: Color(0xFF202359)),
+              textTheme: const TextTheme(
+                  titleLarge: TextStyle(color: Color(0xFFFFFFFF), fontSize: 32),
+                  titleMedium: TextStyle(color: Color(0xFFFFFFFF), fontSize: 28),
+                  bodyMedium: TextStyle(color: Color(0xFFFFFFFF), fontSize: 16),
+                  bodySmall: TextStyle(color: Color(0xFFFFFFFF), fontSize: 14)),
+            ),
             debugShowCheckedModeBanner: false,
-            home: MyFirstPage(),
+            home: const MyFirstPage(),
           );
         });
   }

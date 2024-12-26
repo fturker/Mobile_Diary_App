@@ -11,7 +11,6 @@ class InputDiaryPage extends StatefulWidget {
 
 class _InputDiaryPageState extends State<InputDiaryPage> {
   @override
-  @override
   Widget build(BuildContext context) {
     return Padding(
         padding:

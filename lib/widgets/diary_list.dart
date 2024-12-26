@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../constants/Constants.dart';
+import '../constants/constants.dart';
 import '../models/Diary.dart';
 import '../pages/images_page.dart';
 
