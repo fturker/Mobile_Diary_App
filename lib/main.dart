@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gunluk/constants/app_theme.dart';
 import 'package:gunluk/models/Chat.dart';
 import 'package:gunluk/pages/my_first_page.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -29,16 +30,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
-            theme: ThemeData(
-              scaffoldBackgroundColor: const Color(0xFF292929),
-              bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-                backgroundColor: Color(0xFF202359)),
-              textTheme: const TextTheme(
-                  titleLarge: TextStyle(color: Color(0xFFFFFFFF), fontSize: 32),
-                  titleMedium: TextStyle(color: Color(0xFFFFFFFF), fontSize: 28),
-                  bodyMedium: TextStyle(color: Color(0xFFFFFFFF), fontSize: 16),
-                  bodySmall: TextStyle(color: Color(0xFFFFFFFF), fontSize: 14)),
-            ),
+            theme: AppTheme.darkTheme,
             debugShowCheckedModeBanner: false,
             home: const MyFirstPage(),
           );

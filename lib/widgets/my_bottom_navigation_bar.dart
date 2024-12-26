@@ -27,12 +27,14 @@ class MyBottomNavigationBar extends ConsumerWidget {
             icon: ImageIcon(
                 AssetImage("assets/Icons/diary-page-unselected.png")),
             label: "Günlüğüm",
+            backgroundColor: Colors.purple,
             activeIcon: ImageIcon(
                 AssetImage("assets/Icons/diary-page-selected.png"))),
         BottomNavigationBarItem(
           icon: ImageIcon(
               AssetImage("assets/Icons/home-page-unselected.png")),
           label: "Ana Sayfa",
+          backgroundColor: Colors.purple,
           activeIcon: ImageIcon(
               AssetImage("assets/Icons/home-page-selected.png")),
         ),

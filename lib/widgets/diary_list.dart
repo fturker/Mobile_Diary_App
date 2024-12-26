@@ -1,8 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../constants/constants.dart';
 import '../models/Diary.dart';
 import '../pages/images_page.dart';
 
@@ -57,14 +55,12 @@ class _DiaryListState extends State<DiaryList> {
               ),
               Text(
                 widget.diary!.title.toString(),
-                style: Constants.getdiaryDetailPageTitleTextStyle(),
               ),
               SizedBox(
                 height: 5.w,
               ),
               Text(
                 widget.diary!.text.toString(),
-                style: Constants.getdiaryDetailPageTextStyle(),
               ),
             ],
           ),
@@ -80,14 +76,12 @@ class _DiaryListState extends State<DiaryList> {
               ),
               Text(
                 widget.diary!.title.toString(),
-                style: Constants.getdiaryDetailPageTitleTextStyle(),
               ),
               SizedBox(
                 height: 5.w,
               ),
               Text(
                 widget.diary!.text.toString(),
-                style: Constants.getdiaryDetailPageTextStyle(),
               ),
             ],
           )
